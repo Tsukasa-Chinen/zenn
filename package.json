@@ -1,0 +1,23 @@
+{
+  "name": "zenn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Tsukasa-Chinen@github.com/Tsukasa-Chinen/zenn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tsukasa-Chinen/zenn/issues"
+  },
+  "homepage": "https://github.com/Tsukasa-Chinen/zenn#readme",
+  "dependencies": {
+    "zenn-cli": "^0.1.52"
+  }
+}
