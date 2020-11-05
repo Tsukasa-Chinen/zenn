@@ -12,10 +12,11 @@ published: false
 ## ブロックパターンとは?
 WordPress 5.5 で搭載された、単体のブロックの組み合わせを挿入できる新しい機能です。
 ::: message
-単体ブロックを組み合わせてブロックパターンは作られているので出力されるHTMLは単体ブロックとほぼ同じです。
+単体ブロックを組み合わせてブロックパターンは作られているので出力されるHTMLは単体ブロックとほぼ同じ。
+また、文字色や背景色などの設定の可否は内包するブロックに依存します。
 :::
 
-# ■ ボタン
+# ボタン
 ボタンブロックを複数組み合わせたブロックパターンです。
 
 ## 2ボタン
@@ -45,6 +46,87 @@ WordPress 5.5 で搭載された、単体のブロックの組み合わせを挿
   </div>
   <div class="wp-block-button">
     <a class="wp-block-button__link has-text-color has-background" style="border-radius:50px;background:linear-gradient(42deg,rgb(135,9,53) 0%,rgb(179,22,22) 100%);color:#fffffa">書名</a>
+  </div>
+</div>
+```
+# カラム
+カラムブロックを複数組み合わせたブロックパターンです。
+
+## 2カラムのテキスト
+**【見出し】と【段落】** を組み合わせたカラムを2つ出力します。
+**`カラムブロックと少し違い、「div.wp-block-group」で全体をラップしています。`**
+```html
+<div class="wp-block-group">
+  <div class="wp-block-group__inner-container">
+    <h2 class="has-text-color" style="font-size:38px;color:#ba0c49"> 〜 見出しテキスト 〜 </h2>
+    <div class="wp-block-columns">
+      <div class="wp-block-column">
+        <p style="font-size:18px"> 〜 本文 〜</p>
+      </div>
+      <div class="wp-block-column">
+        <p style="font-size:18px"> 〜 本文 〜</p>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+## 画像を含む2カラムのテキスト
+**【画像】と【段落】** を組み合わせたカラムを2つ出力します。
+**`カラムブロックと少し違い、「div.wp-block-group」で全体をラップしています。`**
+```html
+<div class="wp-block-group">
+  <div class="wp-block-group__inner-container">
+    <div class="wp-block-columns">
+      <div class="wp-block-column">
+        <figure class="wp-block-image size-large">
+          <img src="https://s.w.org/images/core/5.5/don-quixote-02.jpg" alt=""/>
+        </figure>
+        <p style="font-size:18px"> 〜 本文 〜</p>
+      </div>
+      <div class="wp-block-column">
+        <figure class="wp-block-image size-large">
+          <img src="https://s.w.org/images/core/5.5/don-quixote-04.jpg" alt=""/>
+        </figure>
+        <p style="font-size:18px"> 〜 本文 〜</p>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+## ボタンを含む3カラムのテキスト
+**【ボタン】と【段落】** を組み合わせたカラムを3つ出力します。
+**`カラムブロックと少し違い、「div.wp-block-group.alignwide」で全体をラップしています。`**
+```html
+<div class="wp-block-group alignwide">
+  <div class="wp-block-group__inner-container">
+    <div class="wp-block-columns alignwide">
+      <div class="wp-block-column">
+        <p>〜 1カラム目のテキスト 〜</p>
+        <div class="wp-block-buttons">
+          <div class="wp-block-button is-style-outline">
+            <a class="wp-block-button__link has-text-color" style="border-radius:50px;color:#ba0c49">〜 ボタン 1 〜</a>
+          </div>
+        </div>
+      </div>
+      <div class="wp-block-column">
+        <p>〜 2カラム目のテキスト 〜</p>
+        <div class="wp-block-buttons">
+          <div class="wp-block-button is-style-outline">
+            <a class="wp-block-button__link has-text-color" style="border-radius:50px;color:#ba0c49">〜 ボタン 2 〜</a>
+          </div>
+        </div>
+      </div>
+      <div class="wp-block-column">
+        <p>〜 3カラム目のテキスト 〜</p>
+        <div class="wp-block-buttons">
+          <div class="wp-block-button is-style-outline">
+            <a class="wp-block-button__link has-text-color" style="border-radius:50px;color:#ba0c49">〜 ボタン 3 〜</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 ```
