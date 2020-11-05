@@ -3,7 +3,7 @@ title: "WordPress 5.5のブロックパターン（Gutenberg） が出力するH
 emoji: "🕌"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['wordpress', 'gutenberg', 'blockeditor', 'html', 'css']
-published: false
+published: true
 ---
 
 先日[「WordPress 5.5のブロックエディター（Gutenberg） が出力するHTML一覧」](https://zenn.dev/cocomina/articles/a008986da12a7ef0682d)とゆう記事を書きました。
