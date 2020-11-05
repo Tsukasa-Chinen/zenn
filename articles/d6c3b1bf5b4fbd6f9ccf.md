@@ -6,8 +6,8 @@ topics: ['wordpress', 'gutenberg', 'blockeditor', 'html', 'css']
 published: true
 ---
 
-おはこんばんにちは。
-
+![Gutenbergのロゴ画像](https://storage.googleapis.com/zenn-user-upload/j2dex2bfwfn24iqyf4dsrqopo6mb)
+こんにちは。
 先日[「WordPress 5.5のブロックエディター（Gutenberg） が出力するHTML一覧」](https://zenn.dev/cocomina/articles/a008986da12a7ef0682d)とゆう初めてので記事を**Zenn**で書きました（Zenn使いやすくて気に入ってます）
 
 さて、今回は**単体ブロックではなくブロックパターンが出力するHTML一覧**を書きたいと思います。
