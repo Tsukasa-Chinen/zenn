@@ -7,3 +7,4 @@ published: false
 ---
 Githubとの連携テスト。
 masterブランチにコミット後自動デプロイされてるかをチェック。
+masterブランチからdeployに変更。
